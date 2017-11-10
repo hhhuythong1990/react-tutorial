@@ -4,6 +4,7 @@ import TaskForm from './component/TaskForm';
 import Control from './component/Control';
 import TaskList from './component/TaskList';
 // import _ from 'lodash';
+import Demo from './redux/demo';
 
 class App extends Component {
     constructor(props){
@@ -182,7 +183,7 @@ class App extends Component {
         
     }
   render() {
-    let { tasks, isDisplayForm, taskEditing, filter, keyword, sortBy, sortValue } = this.state; //let tasks = this.state.task
+    let { tasks, isDisplayForm, taskEditing, filter, keyword, sortBy, sortValue } = this.state; //let tasks = this.state.tasks
     if(filter){
         if(filter.name){
             tasks = tasks.filter((task)=>{
